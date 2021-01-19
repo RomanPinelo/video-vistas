@@ -1,0 +1,284 @@
+body {
+  margin: 0;
+  background: #8F57FD;
+  font-family: 'Muli', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+.header{
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__img {
+  width: 200px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.header__menu {
+  margin-right: 30px;
+}
+
+.header__menu--profile {
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.header__menu--profile img {
+  margin-right: 8px;
+  width: 40px;
+}
+
+.header__menu--profile p {
+  margin: 0;
+  color: #FFF;
+}
+
+.header__menu ul {
+  display: none;
+  list-style: none;
+  padding: 0; /* Para que los elementos de la lista no esten puestos hacia la derecha */
+  position: absolute;
+  width: 100px;
+  text-align: right;
+  margin: 0 0 0 -14px;
+}
+
+.header__menu:hover ul, ul:hover {
+  display: block;
+}
+
+.header__menu li {
+  margin: 10px 0;
+}
+
+.header__menu li a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+.header__menu li a:hover {
+  text-decoration: underline;
+}
+
+
+.main {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main__title {
+  color: #FFF;
+  font-size: 25px;
+}
+
+.categories__title {
+  color: #FFF;
+  font-size: 16px;
+  position: absolute;
+  padding-left: 30px;
+  width: 100%;
+}
+
+.input {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 2px solid #FFF;
+  border-radius: 25px;
+  color: #FFF;
+  font-family: 'Muli', sans-serif;
+  font-size: 16px; 
+  height: 50px;
+  padding: 0 20px;
+  width: 70%;
+  outline: none;
+}
+
+::placeholder {
+  color: #FFF;
+}
+
+
+.carousel {
+  overflow: scroll;
+  overflow-y: hidden;
+  width: 100%;
+  padding: 30px;
+  position: relative;
+}
+
+.carousel__container {
+  white-space: nowrap; /* No envolver. Ver documentación en w3schools */
+  margin: 70px 0;
+  padding-bottom: 10px;
+}
+
+.carousel-item {
+  width: 200px;
+  height: 250px;
+  border-radius: 20px;
+/* Se pone porque la imagen no se veria con los bordes redondeados */
+  overflow: hidden; 
+  margin-right: 10px;
+  display: inline-block;
+  cursor: pointer;
+  transition: 450ms all;
+/* Lo ponemos porque se sale un poquito el primer item a la izquierda*/
+  transform-origin: center left;
+  position: relative;
+}
+
+/* Lo ponemos porque se sale un poquito el último item a la derecha */
+.carousel-item:last-child {
+  transform-origin: center right;
+}
+
+/* Cuando hacemos hover, los elementos se harán a la derecha */
+/* Con la ~ le decimos que no solo sea para el elemento cuando esta en hover sino también para todos los demás que están sin el hover "hermanos directos" */
+.carousel-item:hover ~ .carousel-item {
+  transform: translate3d(100px, 0, 0);
+}
+
+/* Cuando hacemos hover los demás elemento se ven opacos */
+.carousel__container:hover .carousel-item {
+  opacity: 0.3;
+}
+
+/* Donde nos posamos haciendo hover, crece y sigue teniendo la misma luminosidad */
+.carousel__container:hover .carousel-item:hover {
+  transform: scale(1.5);
+  opacity: 1;
+}
+
+
+.carousel-item__img {
+  width: 200px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.carousel-item__details {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
+  font-size: 10px;
+  opacity: 0;
+  transition: 450ms opacity;
+  padding: 10px;
+  line-height: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: #FFF;
+}
+
+.carousel-item__details:hover {
+  opacity: 1;
+  transition: 450ms opacity;    
+}
+
+.carousel-item__details div img {
+  width: 20px;
+  height: 20px;
+}
+
+
+
+.footer {
+  background-color: #8F57FD;
+  display: flex;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+}
+
+.footer a {
+  color: #FFF;
+  cursor: pointer;
+  font-size: 14px;
+  padding-left: 30px;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+
+
+/* Cuando este pseudo elemento esta presente, webkit desactiva su funcionalidad de visualización por defecto utilizada sobre las barras, y a cambio utiliza el CSS que se proveyó. */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Con esta instrucción, la nueva barra de desplazamiento tendrá un aspecto plano y se aplicará el color especificado como fondo. */
+::-webkit-scrollbar-track {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+/* El código lo utilizaremos para darle color al deslizador */
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb:active {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+/* también podemos dar estilo a los botones que se ubican en la parte superior e inferior de la barra, en caso de ser vertical, o en los extremos laterales en caso de ser horizontal, para ello utilizamos esta sentencia */
+::-webkit-scrollbar-button:increment:horizontal {
+  /* background-color: rgba(255, 0, 0, 1); */
+  background: url(imagen-header/icons8-adelante-24.png);
+  background-size: cover;
+}
+
+::-webkit-scrollbar-button:decrement:horizontal {
+  /* background-color: rgba(255, 0, 0, 1); */
+  background: url(imagen-header/icons8-atrás-24.png);
+  background-size: cover;
+}
+
+::-webkit-scrollbar-button:increment:vertical {
+  /* background-color: rgba(255, 0, 0, 1); */
+  background: url(imagen-header/icons8-chevron-abajo-24.png);
+  background-size: cover;
+}
+
+::-webkit-scrollbar-button:decrement:vertical {
+  /* background-color: rgba(255, 0, 0, 1); */
+  background: url(imagen-header/icons8-chevron-para-arriba-24.png);
+  background-size: cover;
+}
+
+/* En caso de que ambas barras de desplazamiento (horizontal y vertical) aparezcan, es recomendado dar un estilo a la esquina, y eso se logra así */
+::-webkit-scrollbar-corner {
+  background-color: black;
+}
+
+
+
+@media screen and (max-width: 600px) {
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
+}
