@@ -1,0 +1,5 @@
+#Imágenes con extensión jpg
+*.jpg
+
+#Imágenes con extensión png
+*.png
