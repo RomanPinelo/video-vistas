@@ -17,10 +17,10 @@ José Román Pinelo Escobar
 ### Explicación
 
 Esta es la pantalla inicial. Al dar click en Regístrate, nos lleva a la pantalla de registro.
-![inicio-sesion](https://user-images.githubusercontent.com/71656431/104994519-387f0580-59ea-11eb-948a-b7d5def7d691.jpg)
+![Imagen de la pantalla de inicio de sesión](https://user-images.githubusercontent.com/71656431/104994519-387f0580-59ea-11eb-948a-b7d5def7d691.jpg)
 
 En la pantalla de registro, al dar click en Iniciar Sesión, nos lleva a la pantalla principal de Platzi Video.
-![Imagen de la pantalla de inicio de sesión](assets/registro.jpg)
+![Imagen de la pantalla de registro](https://user-images.githubusercontent.com/71656431/104995029-36697680-59eb-11eb-8ff3-1c88094c3e7c.jpg)
 
 En la pantalla principal de Platzi Video, tenemos un carousel. Su efecto se ve al pasar el cursor sobre las imágenes. Al pasar el cursor sobre Perfil, se despliega un pequeño menú, en el cual al dar click en Cerrar Sesión, nos lleva de nuevo a la pantalla de Inicio de Sesión.
 ![Imagen de la pantalla de inicio de sesión](assets/principal.jpg)
