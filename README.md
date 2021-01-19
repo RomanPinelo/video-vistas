@@ -36,8 +36,9 @@ El número elevado de commits fue por que también se practicó la edición del 
 Se utilizó la herramienta ANDI, con la cual se cuidó la accesibilidad en la página, para que pueda ser leída por el narrador y apoyar a las personas con deficiencia visual. Para esto se utilizaron los atributos tabindex y aria-label.
 
 
-En el siguiente link puedes ver la página funcionando. 
+En el siguiente link puedes ver la página funcionando: 
 
 https://romanpinelo.github.io/video-vistas/
 
-**NOTA: Las imagenes no están referenciadas desde un lugar especializado en alojamiento de imágenes.**
+
+**NOTA: Las imágenes no están referenciadas desde un lugar especializado en alojamiento de imágenes.**
