@@ -26,7 +26,7 @@ En la pantalla principal de Platzi Video, tenemos un carousel. Su efecto se ve a
 ![Imagen de la pantalla principal](https://user-images.githubusercontent.com/71656431/104998856-86e3d280-59f1-11eb-85d7-68b485d3b05c.jpg)
 
 Al dar click en Cuenta, nos lleva a la página Not Found.
-<img src="assets/not-found.jpg" ="Página Not Found">
+![Imagen de la pantalla Not Found](https://user-images.githubusercontent.com/71656431/105093187-f0062d00-5a67-11eb-96b4-0719a3d38cf1.jpg)
 
 
 También se practicó el tema de la creación de ramas en Git, trabajar en cada una de ellas y al final fusionar ramas con merge en la rama master.
