@@ -246,25 +246,25 @@ body {
 /* también podemos dar estilo a los botones que se ubican en la parte superior e inferior de la barra, en caso de ser vertical, o en los extremos laterales en caso de ser horizontal, para ello utilizamos esta sentencia */
 ::-webkit-scrollbar-button:increment:horizontal {
   /* background-color: rgba(255, 0, 0, 1); */
-  background: url(imagen-header/icons8-adelante-24.png);
+  background: url(/assets/icons8-adelante-24.png);
   background-size: cover;
 }
 
 ::-webkit-scrollbar-button:decrement:horizontal {
   /* background-color: rgba(255, 0, 0, 1); */
-  background: url(imagen-header/icons8-atrás-24.png);
+  background: url(/assets/icons8-atr%C3%A1s-24.png);
   background-size: cover;
 }
 
 ::-webkit-scrollbar-button:increment:vertical {
   /* background-color: rgba(255, 0, 0, 1); */
-  background: url(imagen-header/icons8-chevron-abajo-24.png);
+  background: url(/assets/icons8-chevron-abajo-24.png);
   background-size: cover;
 }
 
 ::-webkit-scrollbar-button:decrement:vertical {
   /* background-color: rgba(255, 0, 0, 1); */
-  background: url(imagen-header/icons8-chevron-para-arriba-24.png);
+  background: url(/assets/icons8-chevron-para-arriba-24.png);
   background-size: cover;
 }
 
