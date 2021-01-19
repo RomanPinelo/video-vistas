@@ -1,0 +1,183 @@
+/* Se utilizara la metodología BEM en las clases */
+
+body {
+  margin: 0;
+  font-family: 'Muli', sans-serif;
+}
+
+.header{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #21C08B;
+  top: 0;
+}
+
+.header__img {
+  width: 200px;
+  margin-left: 30px;
+}
+
+
+
+.login {
+  background-image: linear-gradient(#21C08B, #AB88FF);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 30px;
+  min-height: calc(100vh - 200px);
+}
+
+.login__container {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 2px solid #FFF;
+  border-radius: 40px;
+  color: #FFF;
+  padding: 60px 68px 40px;
+  min-height: 700px;
+  width: 300px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.login__container--form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login__container--form label {
+  font-size: 14px;
+}
+
+.login__container--remember-me {
+  color: #FFF;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.login__container--remember-me a {
+  color: #FFF;
+  font-size: 14px;
+  text-decoration: none;  
+}
+
+.login__container--remember-me a:hover {
+  text-decoration: underline;  
+}
+
+
+/* Con > le digo que tome todos los div de esa clase y los estilice */
+.login__container--social-media > div {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* Con > le digo que tome todaslas imágenes que están dentro del div que está dentro 
+de esa clase y los estilice */
+.login__container--social-media > div > img {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.login__container--register {
+  font-size: 14px;
+}
+
+.login__container--register a {
+  font-size: 16px;
+  color: #FFF;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.login__container--register a:hover {
+  text-decoration: underline;
+}
+
+.login__container p {
+  text-align: center;
+}
+
+
+.input {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px solid #FFF;
+  font-family: 'Muli', sans-serif;
+  font-size: 16px;
+  margin-bottom: 20px;
+  padding: 0 20px;
+  outline: none;
+  height: 50px;
+  color: #FFF;
+}
+
+::placeholder {
+  color: #FFF;
+}
+
+.button {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 25px;
+  color: #FFF;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: 'Muli', sans-serif;
+  height: 50px;
+  letter-spacing: 1px;
+  margin: 10px 0;
+}
+
+.button:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+
+
+.footer {
+  background-color: #AB88FF;
+  display: flex;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+}
+
+.footer a {
+  color: #FFF;
+  cursor: pointer;
+  font-size: 14px;
+  padding-left: 30px;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+  .login__container {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    width: 100%;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
+}
