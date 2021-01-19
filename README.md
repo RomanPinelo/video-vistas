@@ -17,7 +17,7 @@ José Román Pinelo Escobar
 ### Explicación
 
 Esta es la pantalla inicial. Al dar click en Regístrate, nos lleva a la pantalla de registro.
-![Imagen de la pantalla de inicio de sesión](https://github.com/RomanPinelo/video-vistas/blob/master/assets/inicio-sesion.jpg?raw=true)
+![inicio-sesion](https://user-images.githubusercontent.com/71656431/104994519-387f0580-59ea-11eb-948a-b7d5def7d691.jpg)
 
 En la pantalla de registro, al dar click en Iniciar Sesión, nos lleva a la pantalla principal de Platzi Video.
 ![Imagen de la pantalla de inicio de sesión](assets/registro.jpg)
