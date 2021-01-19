@@ -33,4 +33,4 @@ También se practicó el tema de la creación de ramas en Git, trabajar en cada 
 
 El número elevado de commits fue por que también se practicó la edición del archivo README.md. Se investigó y varios métodos estaban mal, hasta que se encontró el que por fin funcionó.
 
-Se utilizó la herramienta ANDI, con la cual se cuidó la accesibilidad en la página, para que pueda ser leída por el narrador y apoyar a las personas con deficiencia visal. Para esto se utilizaron los atributos tabindex y aria-label
+Se utilizó la herramienta ANDI, con la cual se cuidó la accesibilidad en la página, para que pueda ser leída por el narrador y apoyar a las personas con deficiencia visual. Para esto se utilizaron los atributos tabindex y aria-label
